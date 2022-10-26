@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Case Study</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body style="width: 100%">
+    <header>
+        <div style="width: 100%" class="menu">
+            <table class="table" style="width: 100%">
+                <tr>
+                    <td rowspan="2">
+                        <div class="logo">
+                            <a href="http://localhost:63342/bai%20tap/Case%20Study%202/index.html?_ijt=e1a2eon8970te33bonnmat1dqo&_ij_reload=RELOAD_ON_SAVE"><img src="TrangChu/logo_yamaha_rev.png" width="50%" height="50%"></a>
+                        </div>
+                    </td>
+                    <td>
+                        <ul>
+                            <li><a href="http://localhost:63342/bai%20tap/Case%20Study%202/index_supersp.html?_ijt=u22llud62fcunvqkhchrmirns7&_ij_reload=RELOAD_ON_SAVE">MOTORCYCLE</a></li>
+                            <li><a href="#">ATV</a></li>
+                            <li><a href="#">Side-by-Side</a></li>
+                            <li><a href="#">Snowmobile</a></li>
+                        </ul>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <form action="" class="search" method="post"></form>
+                        <input type="text" class="searchTemr" placeholder="Search">
+                        <button type="submit" class="searchButton">Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </header>
+
+    <div class="w3-content w3-section" style="width:1920px" >
+        <img class="mySlides" src="TrangChu/bg_4.jpg">
+        <img class="mySlides" src="TrangChu/bg_3.jpg">
+        <img class="mySlides" src="TrangChu/bg_2.jpg">
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <a href="http://localhost:63342/bai%20tap/Case%20Study%202/index_supersp.html?_ijt=u22llud62fcunvqkhchrmirns7&_ij_reload=RELOAD_ON_SAVE"><img src="TrangChu/1supersport.jpg"></a>
+                </td>
+                <td rowspan="2">
+                    <img src="TrangChu/2hypernaked.jpg">
+                    <img src="TrangChu/3sportheritage.jpg" >
+                </td>
+            </tr>
+        </table>
+    </div>
+    <div>
+        <table>
+            <tr>
+                <td>
+                    <img src="TrangChu/5adven.jpg">
+                </td>
+                <td>
+                    <img src="TrangChu/6sptouring.jpg">
+                </td>
+                <td>
+                    <img src="TrangChu/7scooter.jpg">
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+</html>
+<script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        myIndex++;
+        if (myIndex > x.length) {myIndex = 1}
+        x[myIndex-1].style.display = "block";
+        setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+</script>

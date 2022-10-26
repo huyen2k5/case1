@@ -1,0 +1,26 @@
+.gallery{
+    background: #6b6969;
+    height: 50px;
+}
+.textGallery{
+    margin-left: 900px;
+}
+.videoR1M{
+    width: 30%;
+    margin-left: 700px;
+}
+.bgvideoR1M{
+    background: black;
+}
+.numberR1{
+
+    height: 50px;
+    background: #777676;
+}
+.numberAllR1{
+    border: 1px white;
+}
+.tableR1m{
+    color: #fafafa;
+    background: black;
+}

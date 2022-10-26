@@ -1,0 +1,30 @@
+.videoR7{
+    overflow: hidden;
+    width: 1887px;
+
+    position: relative;
+}
+.sp_02Text{
+    position: relative;
+    width: 930px;
+    height: 495px;
+}
+h3{
+    align-content: center;
+    position: absolute;
+    width: 40%;
+}
+.superLineup{
+    background: #6b6969;
+    height: 50px;
+}
+.superLineup h2{
+    text-align: center;
+}
+.listsp_show {
+    align: center;
+    background: #a69a9a;
+}
+.table{
+
+}

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index_supersp.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        .mySlides {display:none}
+        .left, .right, .badge {cursor:pointer}
+        .badge {height:13px;width:13px;padding:0}
+    </style>
+</head>
+<body>
+      <header>
+          <div style="width: 100%" class="menu">
+              <table class="table" style="width: 100%">
+                  <tr>
+                      <td rowspan="2">
+                          <div class="logo">
+                              <a href="http://localhost:63342/bai%20tap/Case%20Study%202/index.html?_ijt=fqaogubvoeoli8k17n283474as&_ij_reload=RELOAD_ON_SAVE#"><img src="TrangChu/logo_yamaha_rev.png" width="50%" height="50%"></a>
+                          </div>
+                        </td>
+                        <td>
+                          <ul>
+                            <li><a href="#">MOTORCYCLE</a></li>
+                            <li><a href="#">ATV</a></li>
+                            <li><a href="#">Side-by-Side</a></li>
+                            <li><a href="#">Snowmobile</a></li>
+                          </ul>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <form action="" class="search" method="post"></form>
+                          <input type="text" class="searchTemr" placeholder="Search">
+                          <button type="submit" class="searchButton">Submit</button>
+                      </td>
+                  </tr>
+              </table>
+          </div>
+      </header>
+      <div class="video">
+            <video class="videoR7" loop autoplay muted playsinline>
+                <source src="sp/TheNewR7.mp4" type="video/mp4">
+            </video>
+      </div>
+    <div>
+        <table>
+            <tr>
+                <th>
+                <div>
+                    <img src="sp/sp_01.jpg">
+                </div>
+                </td>
+                <th>
+                    <img src="sp/sp_03.jpg" class="sp_02" width="930px" height="495">
+
+                </th>
+            </tr>
+        </table>
+    </div>
+    <div class="superLineup">
+        <h2>SUPERSPORT LINEUP </h2>
+    </div>
+
+      <div>
+          <table width="1000px">
+              <tr>
+                  <th>
+                      <div class="display-container" style="max-width:500px">
+                          <img class="mySlides" src="sp/sp_list_1.png" style="width:100%">
+                          <img class="mySlides" src="sp/sp_list_2.png" style="width:100%">
+                          <img class="mySlides" src="sp/sp_list_3.png" style="width:100%">
+                          <div class="display-container" style="width:100%">
+                              <div class="left hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+                              <div class="right hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+                              <span class="display-container" onclick="currentDiv(1)"></span>
+                              <span class="display-container" onclick="currentDiv(2)"></span>
+                              <span class="badge displaySlider border transparent hover-white" onclick="currentDiv(3)"></span>
+                          </div>
+                      </div>
+                  </th>
+                  <a href="http://localhost:63342/bai%20tap/Case%20Study%202/index_R1M.html?_ijt=3upsr25ctq895tldtt18ajr76l&_ij_reload=RELOAD_ON_SAVE"><button type="button">Show more</button></a>
+                  <td>
+
+                      <div>
+                          <div class="table">
+                              <h2>Sign up for the experience</h2>
+                              <p>Name: <input type="text"></p>
+
+                              <p>Phone number <input type="number"></p>
+
+                              <p>Email: <input type="email"></p>
+
+                              <p>City</p>
+
+                              <select class="choose" onchange="selectCounty(this.value)">
+                              <option value="0" selected="selected">City</option>
+                              <option value="Hà Nội">Hà Nội</option>
+                              <option value="Hồ Chí Minh">Hồ Chí Minh</option>
+                              <option value="Đà Nẵng">Đà Nẵng</option>
+                              <option value="Hải Dương">Hải Dương</option>
+                          </select>
+                              <p>District </p>
+                              <select class="choose" id="seeDistrict">
+                              <option value="0" selected="selected">District</option>
+                          </select>
+                          </div>
+                          <button type="submit" id="submit" onclick="clickSubmit()">Submit</button>
+                      </div>
+                  </td>
+              </tr>
+      </table>
+</body>
+</html>
+<script src="index_supersp.js"></script>
+<script>
+    function address(City, District) {
+        this.City = City;
+        this.District = District;
+
+        this.getCity = function () {
+            return this.City;
+        }
+        this.getDistrict = function () {
+            return this.District;
+        }
+        this.setCity = function () {
+            return this.City;
+        }
+        this.setDistrict = function () {
+            return this.District;
+        }
+
+    }
+    let addCity = [];
+    addCity[0] = new address("Hà Nội", "Mỹ Đình",);
+    addCity[1] = new address("Hà Nội", "Thanh Xuân", );
+    addCity[2] = new address("Hà Nội", "Nam Từ Liêm", );
+    addCity[3] = new address("Hà Nội", "Đống Đa", );
+    addCity[4] = new address("Hồ Chí Minh", "Quận 1",);
+    addCity[5] = new address("Hồ Chí Minh", "Quận 2",);
+    addCity[6] = new address("Hồ Chí Minh", "Quận 3", );
+    addCity[7] = new address("Hồ Chí Minh", "Gò Vấp",);
+    addCity[8] = new address("Hồ Chí Minh", "Thủ Đức",);
+    addCity[9] = new address("Đà Nẵng", "Hải Châu",);
+    addCity[10] = new address("Đà Nẵng", "Thanh Khê",);
+    addCity[11] = new address("Đà Nẵng", "Sơn Trà",);
+    addCity[12] = new address("Hải Dương", "Bình Hàn",);
+    addCity[13] = new address("Hải Dương", "Quang Trung",);
+    addCity[14] = new address("Hải Dương", "Nguyễn Trãi", );
+    addCity[15] = new address("Hải Dương", "Trần Phú",);
+    function selectCounty(City) {
+        let showCity = " <option value=\"0\" selected=\"selected\">District</option>";
+        let showRoom = " ";
+        console.log(City)
+        for (let i = 0; i < addCity.length; i++) {
+            if (addCity[i].getCity() === City) {
+                showCity += "<option>" + addCity[i].getDistrict() + "</option>";
+
+            }
+        }
+
+        document.getElementById("seeDistrict").innerHTML = showCity;
+    }
+
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+        showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+        showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        var dots = document.getElementsByClassName("displaySlider");
+        if (n > x.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";
+        }
+        for (i = 0; i < dots.length; i++) {
+            dots[i].className = dots[i].className.replace(" w3-white", "");
+        }
+        x[slideIndex-1].style.display = "block";
+        dots[slideIndex-1].className += " w3-white";
+    }
+    function clickSubmit() {
+        alert("Congratulations. We will contact you soon");
+
+    }
+</script>
